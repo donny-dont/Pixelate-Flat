@@ -1,0 +1,32 @@
+// Copyright (c) 2014, the Pixelate Project Authors.
+// Please see the AUTHORS file for details. All rights reserved.
+// Use of this source code is governed by a zlib license that can be found in
+// the LICENSE file.
+
+@import 'fonts/variables';
+@import 'partials/colors';
+@import 'partials/fonts';
+@import 'partials/variables';
+
+px-expander .header {
+  cursor: $cursor-click;
+  transition: $background-color-transition;
+  padding: $padding-default;
+
+  @include vertically-center-text($font-size-larger);
+  @include color-change($color-square-ui-purple);
+}
+
+px-expander .icon {
+  margin-right: 5px;
+}
+
+px-expander .expand-icon:before {
+  font-family: "FontAwesome";
+  content: $fa-var-caret-down;
+}
+
+px-expander .collapse-icon:before {
+  font-family: "FontAwesome";
+  content: $fa-var-caret-up;
+}

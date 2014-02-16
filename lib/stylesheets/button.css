@@ -1,0 +1,11 @@
+px-button {
+  cursor: pointer;
+  transition: background-color 1s;
+  padding: 10px 20px;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #1f7f5c; }
+  px-button:hover {
+    background-color: #2bb080; }
+  px-button:active {
+    background-color: #175e44; }
