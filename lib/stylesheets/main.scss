@@ -3,6 +3,7 @@
 // Use of this source code is governed by a zlib license that can be found in
 // the LICENSE file.
 
+@import 'partials/backgrounds';
 @import 'partials/colors';
 @import 'partials/variables';
 
@@ -20,7 +21,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   color: $color-square-ui-white;
   background-color: $color-square-ui-black;
 
@@ -58,4 +59,8 @@ body {
 
 .yellow {
   @include color-change($color-square-ui-yellow);
+}
+
+.grid {
+  @include background-grid(transparent, rgba($color-square-ui-white, 0.2));
 }
