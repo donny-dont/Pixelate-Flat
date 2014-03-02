@@ -11,7 +11,7 @@ px-expander ^ .header {
     background-color: #574a73; }
 
 px-expander ^ .icon {
-  margin-right: 10px; }
+  margin-right: 5px; }
 
 px-expander ^ .expand-icon:before {
   font-family: "FontAwesome";
@@ -21,8 +21,7 @@ px-expander ^ .collapse-icon:before {
   font-family: "FontAwesome";
   content: "\f0d8"; }
 
-        px-expander ^ .view {
-        transition-property: max-height;
-        transition-duration: 0.25s;
-        transition-timing-function: ease;
-      }
+px-expander ^ .view {
+  transition-property: max-height;
+  transition-duration: 0.25s;
+  transition-timing-function: ease; }

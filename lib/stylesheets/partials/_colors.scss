@@ -9,6 +9,10 @@ $default-lighten-by: 12%;
 @mixin color-change($base-color, $darken-by: $default-darken-by, $lighten-by: $default-lighten-by) {
   background-color: $base-color;
 
+  @include color-change-interaction($base-color, $darken-by, $lighten-by);
+}
+
+@mixin color-change-interaction($base-color, $darken-by: $default-darken-by, $lighten-by: $default-lighten-by) {
   &:hover {
     background-color: lighten($base-color, $lighten-by);
   }

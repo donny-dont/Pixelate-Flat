@@ -9,29 +9,35 @@
 @import 'partials/fonts';
 @import 'partials/variables';
 
-px-expander .header {
+px-tree-view-node .header {
   cursor: $cursor-click;
   transition: $background-color-transition;
   padding: $padding-default;
 
-  @include vertically-center-text($font-size-larger);
-  @include color-change($color-square-ui-purple);
+  @include vertically-center-text($font-size-regular);
+  @include color-change-interaction($color-square-ui-purple);
 }
 
-px-expander .icon {
+px-tree-view-node .icon {
   margin-right: 5px;
 }
 
-px-expander .expand-icon:before {
+px-tree-view-node .expand-icon:before {
   font-family: "FontAwesome";
   content: $fa-var-caret-down;
 }
 
-px-expander .collapse-icon:before {
+px-tree-view-node .collapse-icon:before {
   font-family: "FontAwesome";
   content: $fa-var-caret-up;
 }
 
-px-expander .view {
+px-tree-view-node .view {
+  margin-left: 12px;
+
   @include animate-height;
+}
+
+px-tree-view-node .node_selected {
+  background-color: $color-square-ui-purple;
 }
