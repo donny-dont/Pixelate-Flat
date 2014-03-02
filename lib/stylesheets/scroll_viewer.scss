@@ -15,6 +15,7 @@ px-scroll-viewer {
   }
 
   &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
     background-color: rgba(255, 255, 255, 0.2);
   }
 
