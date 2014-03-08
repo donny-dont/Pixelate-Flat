@@ -1,0 +1,16 @@
+px-tab ^ .tabs {
+  border-bottom: 1px solid #5a9aa8; }
+
+px-tab ^ .tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.5s;
+  font-size: 24px;
+  line-height: 24px; }
+  px-tab ^ .tab:hover {
+    background-color: #82b3bd; }
+  px-tab ^ .tab:active {
+    background-color: #4b828e; }
+
+px-tab ^ .tab.selected {
+  background-color: #5a9aa8; }
