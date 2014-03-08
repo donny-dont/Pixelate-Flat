@@ -10,15 +10,17 @@ px-tree-view-node ^ .header {
     background-color: #574a73; }
 
 px-tree-view-node ^ .icon {
-  margin-right: 5px; }
+  width: 16px;
+  margin-right: 16px;
+  text-align: center; }
 
 px-tree-view-node ^ .expand-icon:before {
   font-family: "FontAwesome";
-  content: "\f0d7"; }
+  content: "\f0da"; }
 
 px-tree-view-node ^ .collapse-icon:before {
   font-family: "FontAwesome";
-  content: "\f0d8"; }
+  content: "\f0d7"; }
 
 px-tree-view-node ^ .view {
   margin-left: 12px;

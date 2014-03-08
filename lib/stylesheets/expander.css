@@ -11,15 +11,17 @@ px-expander ^ .header {
     background-color: #574a73; }
 
 px-expander ^ .icon {
-  margin-right: 5px; }
+  width: 16px;
+  margin-right: 16px;
+  text-align: center; }
 
 px-expander ^ .expand-icon:before {
   font-family: "FontAwesome";
-  content: "\f0d7"; }
+  content: "\f0da"; }
 
 px-expander ^ .collapse-icon:before {
   font-family: "FontAwesome";
-  content: "\f0d8"; }
+  content: "\f0d7"; }
 
 px-expander ^ .view {
   transition-property: max-height;

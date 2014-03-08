@@ -7,6 +7,7 @@
 @import 'partials/animations';
 @import 'partials/colors';
 @import 'partials/fonts';
+@import 'partials/icons';
 @import 'partials/variables';
 
 px-expander .header {
@@ -19,17 +20,15 @@ px-expander .header {
 }
 
 px-expander .icon {
-  margin-right: 5px;
+  @include icon;
 }
 
-px-expander .expand-icon:before {
-  font-family: "FontAwesome";
-  content: $fa-var-caret-down;
+px-expander .expand-icon {
+  @include icon-font($expand-icon-content);
 }
 
-px-expander .collapse-icon:before {
-  font-family: "FontAwesome";
-  content: $fa-var-caret-up;
+px-expander .collapse-icon {
+  @include icon-font($collapse-icon-content);
 }
 
 px-expander .view {

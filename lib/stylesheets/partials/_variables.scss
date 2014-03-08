@@ -3,6 +3,8 @@
 // Use of this source code is governed by a zlib license that can be found in
 // the LICENSE file.
 
+@import '../fonts/variables';
+
 // Color palette from Square UI http://designmodo.com/square/
 $color-square-ui-darken-by: 8%;
 $color-square-ui-lighten-by: 12%;
@@ -29,3 +31,11 @@ $font-size-larger: 24px;
 
 // Cursors
 $cursor-click: pointer;
+
+// Icons
+$icon-size: 16px;
+$icon-margin: 5px;
+
+// Expansion icons
+$expand-icon-content: $fa-var-caret-right;
+$collapse-icon-content: $fa-var-caret-down;

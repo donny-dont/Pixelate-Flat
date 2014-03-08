@@ -7,6 +7,7 @@
 @import 'partials/animations';
 @import 'partials/colors';
 @import 'partials/fonts';
+@import 'partials/icons';
 @import 'partials/variables';
 
 px-tree-view-node .header {
@@ -19,17 +20,15 @@ px-tree-view-node .header {
 }
 
 px-tree-view-node .icon {
-  margin-right: 5px;
+  @include icon;
 }
 
-px-tree-view-node .expand-icon:before {
-  font-family: "FontAwesome";
-  content: $fa-var-caret-down;
+px-tree-view-node .expand-icon {
+  @include icon-font($expand-icon-content);
 }
 
-px-tree-view-node .collapse-icon:before {
-  font-family: "FontAwesome";
-  content: $fa-var-caret-up;
+px-tree-view-node .collapse-icon {
+  @include icon-font($collapse-icon-content);
 }
 
 px-tree-view-node .view {
