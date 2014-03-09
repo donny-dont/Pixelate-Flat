@@ -8,8 +8,8 @@ for %%f in (%TARGET_DIR%/*.scss) do (
     )
 
 echo Fixing carets
-CALL ruby fix_caret.rb %TARGET_DIR%/tree_view_node.css
-CALL ruby fix_caret.rb %TARGET_DIR%/list_view_item.css
-CALL ruby fix_caret.rb %TARGET_DIR%/expander.css
+for %%f in (%TARGET_DIR%/*.css) do (
+    call ruby fix_caret.rb %TARGET_DIR%/%%~nf.css
+    )
 
 echo Done
