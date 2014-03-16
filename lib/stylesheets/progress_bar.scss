@@ -8,19 +8,19 @@
 @import 'partials/variables';
 
 px-progress-bar .fill {
-  background-color: $color-square-ui-green;
+  background-color: $color-success;
 }
 
 px-progress-bar.info .fill {
-  background-color: $color-square-ui-blue;
+  background-color: $color-info;
 }
 
 px-progress-bar.warning .fill {
-  background-color: $color-square-ui-yellow;
+  background-color: $color-warning;
 }
 
-px-progress-bar.error .fill {
-  background-color: $color-square-ui-red;
+px-progress-bar.danger .fill {
+  background-color: $color-danger;
 }
 
 px-progress-bar.striped .fill:after {
@@ -31,7 +31,7 @@ px-progress-bar.striped .fill:after {
   @include background-stripes;
 }
 
-@-webkit-keyframes move {
+@keyframes move {
   0% {
     background-position: 0 0;
   }
@@ -41,5 +41,5 @@ px-progress-bar.striped .fill:after {
 }
 
 px-progress-bar.animated .fill:after {
-  -webkit-animation: move 2s linear infinite;
+  animation: move 2s linear infinite;
 }

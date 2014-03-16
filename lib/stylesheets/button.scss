@@ -13,5 +13,17 @@ px-button {
   padding: $padding-default;
 
   @include vertically-center-text($font-size-larger);
-  @include color-change($color-square-ui-green);
+  @include color-change($color-success);
+}
+
+px-button.info {
+  @include color-change($color-info);
+}
+
+px-button.warning {
+  @include color-change($color-warning);
+}
+
+px-button.danger {
+  @include color-change($color-danger);
 }
