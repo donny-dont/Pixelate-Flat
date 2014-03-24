@@ -1,2 +1,7 @@
 name: pixelate_flat
+version: 0.0.1
+authors:
+- Don Olmstead
+- Ali Akbar
 description: A flat UI theme for the Pixelate library
+homepage: https://github.com/donny-dont/Pixelate-Flat
