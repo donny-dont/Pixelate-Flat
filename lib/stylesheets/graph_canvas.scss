@@ -7,6 +7,30 @@
 @import 'partials/colors';
 @import 'partials/variables';
 
+//---------------------------------------------------------------------
+// px-graph-canvas
+//---------------------------------------------------------------------
+
 px-graph-canvas {
   @include background-grid(transparent, rgba($color-square-ui-white, 0.2));
+}
+
+//---------------------------------------------------------------------
+// px-graph-socket
+//---------------------------------------------------------------------
+
+$default-socket-size: 32px;
+
+px-graph-socket {
+  /shadow/ {
+    .socket {
+      background-color: $color-square-ui-black;
+
+      @include background-circle($default-socket-size);
+
+      &:hover {
+        background-color: $color-square-ui-green;
+      }
+    }
+  }
 }

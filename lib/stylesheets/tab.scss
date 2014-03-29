@@ -8,31 +8,37 @@
 @import 'partials/fonts';
 @import 'partials/variables';
 
-px-tab .tabs.top {
-  border-bottom: 1px solid $color-square-ui-blue;
-}
+px-tab {
+  /shadow/ {
+    .tab {
+      cursor: $cursor-click;
+      padding: $padding-default;
+      transition: $background-color-transition;
 
-px-tab .tabs.bottom {
-  border-top: 1px solid $color-square-ui-blue;
-}
+      @include vertically-center-text($font-size-larger);
+      @include color-change-interaction($color-square-ui-blue);
 
-px-tab .tabs.left {
-  border-right: 1px solid $color-square-ui-blue;
-}
+      &.selected {
+        background-color: $color-square-ui-blue;
+      }
+    }
 
-px-tab .tabs.right {
-  border-left: 1px solid $color-square-ui-blue;
-}
+    .tabs {
+      &.top {
+        border-bottom: 1px solid $color-square-ui-blue;
+      }
 
-px-tab .tab {
-  cursor: $cursor-click;
-  padding: $padding-default;
-  transition: $background-color-transition;
+      &.bottom {
+        border-top: 1px solid $color-square-ui-blue;
+      }
 
-  @include vertically-center-text($font-size-larger);
-  @include color-change-interaction($color-square-ui-blue);
-}
+      &.left {
+        border-right: 1px solid $color-square-ui-blue;
+      }
 
-px-tab .tab.selected {
-  background-color: $color-square-ui-blue;
+      &.right {
+        border-left: 1px solid $color-square-ui-blue;
+      }
+    }
+  }
 }

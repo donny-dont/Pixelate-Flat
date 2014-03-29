@@ -14,16 +14,16 @@ px-button {
 
   @include vertically-center-text($font-size-larger);
   @include color-change($color-success);
-}
 
-px-button.info {
-  @include color-change($color-info);
-}
+  &.info {
+    @include color-change($color-info);
+  }
 
-px-button.warning {
-  @include color-change($color-warning);
-}
+  &.warning {
+    @include color-change($color-warning);
+  }
 
-px-button.danger {
-  @include color-change($color-danger);
+  &.danger {
+    @include color-change($color-danger);
+  }
 }

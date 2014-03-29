@@ -9,20 +9,16 @@ px-expander ^ .header {
     background-color: #897aa9; }
   px-expander ^ .header:active {
     background-color: #574a73; }
-
 px-expander ^ .icon {
   width: 16px;
   margin-right: 16px;
   text-align: center; }
-
 px-expander ^ .expand-icon:before {
   font-family: "FontAwesome";
   content: "\f0da"; }
-
 px-expander ^ .collapse-icon:before {
   font-family: "FontAwesome";
   content: "\f0d7"; }
-
 px-expander ^ .view {
   transition-property: max-height;
   transition-duration: 0.25s;

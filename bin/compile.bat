@@ -9,7 +9,7 @@ for %%f in (%TARGET_DIR%/*.scss) do (
 
 echo Fixing carets
 for %%f in (%TARGET_DIR%/*.css) do (
-    call ruby fix_caret.rb %TARGET_DIR%/%%~nf.css
+    call ruby old_selector.rb %TARGET_DIR%/%%~nf.css
     )
 
 echo Done

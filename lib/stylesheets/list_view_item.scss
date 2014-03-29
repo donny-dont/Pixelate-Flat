@@ -16,8 +16,8 @@ px-list-view-item {
 
   @include vertically-center-text($font-size-regular);
   @include color-change-interaction($color-square-ui-purple);
-}
 
-px-list-view-item.selected {
-  background-color: $color-square-ui-purple;
+  &.selected {
+    background-color: $color-square-ui-purple;
+  }
 }

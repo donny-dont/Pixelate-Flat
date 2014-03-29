@@ -1,15 +1,3 @@
-px-tab ^ .tabs.top {
-  border-bottom: 1px solid #5a9aa8; }
-
-px-tab ^ .tabs.bottom {
-  border-top: 1px solid #5a9aa8; }
-
-px-tab ^ .tabs.left {
-  border-right: 1px solid #5a9aa8; }
-
-px-tab ^ .tabs.right {
-  border-left: 1px solid #5a9aa8; }
-
 px-tab ^ .tab {
   cursor: pointer;
   padding: 10px 20px;
@@ -20,6 +8,13 @@ px-tab ^ .tab {
     background-color: #82b3bd; }
   px-tab ^ .tab:active {
     background-color: #4b828e; }
-
-px-tab ^ .tab.selected {
-  background-color: #5a9aa8; }
+  px-tab ^ .tab.selected {
+    background-color: #5a9aa8; }
+px-tab ^ .tabs.top {
+  border-bottom: 1px solid #5a9aa8; }
+px-tab ^ .tabs.bottom {
+  border-top: 1px solid #5a9aa8; }
+px-tab ^ .tabs.left {
+  border-right: 1px solid #5a9aa8; }
+px-tab ^ .tabs.right {
+  border-left: 1px solid #5a9aa8; }

@@ -10,33 +10,37 @@
 @import 'partials/icons';
 @import 'partials/variables';
 
-px-tree-view-node .header {
-  cursor: $cursor-click;
-  transition: $background-color-transition;
-  padding: $padding-default;
+px-tree-view-node {
+  /shadow/ {
+    .header {
+      cursor: $cursor-click;
+      transition: $background-color-transition;
+      padding: $padding-default;
 
-  @include vertically-center-text($font-size-regular);
-  @include color-change-interaction($color-square-ui-purple);
-}
+      @include vertically-center-text($font-size-regular);
+      @include color-change-interaction($color-square-ui-purple);
+    }
 
-px-tree-view-node .icon {
-  @include icon;
-}
+    .icon {
+      @include icon;
+    }
 
-px-tree-view-node .expand-icon {
-  @include icon-font($expand-icon-content);
-}
+    .expand-icon {
+      @include icon-font($expand-icon-content);
+    }
 
-px-tree-view-node .collapse-icon {
-  @include icon-font($collapse-icon-content);
-}
+    .collapse-icon {
+      @include icon-font($collapse-icon-content);
+    }
 
-px-tree-view-node .view {
-  margin-left: $default-icon-size + $default-icon-margin;
+    .view {
+      margin-left: $default-icon-size + $default-icon-margin;
 
-  @include animate-height;
-}
+      @include animate-height;
+    }
 
-px-tree-view-node .selected {
-  background-color: $color-square-ui-purple;
+    .selected {
+      background-color: $color-square-ui-purple;
+    }
+  }
 }
