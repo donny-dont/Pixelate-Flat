@@ -6,6 +6,7 @@
 @import 'fonts/variables';
 @import 'partials/colors';
 @import 'partials/fonts';
+@import 'partials/scrollable';
 @import 'partials/variables';
 
 px-tab {
@@ -41,4 +42,9 @@ px-tab {
       }
     }
   }
+}
+
+px-tab-item.scrollable {
+  overflow: scroll;
+  @include scrollable;
 }

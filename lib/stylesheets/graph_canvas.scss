@@ -7,12 +7,25 @@
 @import 'partials/colors';
 @import 'partials/variables';
 
+body /shadow-deep/ {
+
 //---------------------------------------------------------------------
 // px-graph-canvas
 //---------------------------------------------------------------------
 
 px-graph-canvas {
   @include background-grid(transparent, rgba($color-square-ui-white, 0.2));
+
+  /shadow/ {
+    path {
+      stroke: $color-square-ui-white;
+      stroke-width: 1px;
+
+      &:hover {
+        stroke: $color-danger;
+      }
+    }
+  }
 }
 
 //---------------------------------------------------------------------
@@ -34,3 +47,5 @@ px-graph-socket {
     }
   }
 }
+
+} // end body /shadow-deep/
