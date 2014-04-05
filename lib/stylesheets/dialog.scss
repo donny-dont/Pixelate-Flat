@@ -7,10 +7,16 @@
 @import 'partials/fonts';
 @import 'partials/variables';
 
+body /deep/ {
+
+//---------------------------------------------------------------------
+// px-dialog
+//---------------------------------------------------------------------
+
 px-dialog {
   background-color: rgba(0, 0, 0, 0.75);
 
-  /shadow/ {
+  &::shadow {
     .container {
       background-color: $color-square-ui-black;
     }
@@ -20,3 +26,5 @@ px-dialog {
     }
   }
 }
+
+} // end body /deep/

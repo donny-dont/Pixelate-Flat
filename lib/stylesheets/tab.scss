@@ -9,8 +9,14 @@
 @import 'partials/scrollable';
 @import 'partials/variables';
 
+body /deep/ {
+
+//---------------------------------------------------------------------
+// px-tab
+//---------------------------------------------------------------------
+
 px-tab {
-  /shadow/ {
+  &::shadow {
     .tab {
       cursor: $cursor-click;
       padding: $padding-default;
@@ -44,7 +50,13 @@ px-tab {
   }
 }
 
+//---------------------------------------------------------------------
+// px-tab-item
+//---------------------------------------------------------------------
+
 px-tab-item.scrollable {
   overflow: scroll;
   @include scrollable;
 }
+
+} // end body /deep/

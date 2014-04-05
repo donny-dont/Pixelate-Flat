@@ -7,6 +7,10 @@
 @import 'partials/colors';
 @import 'partials/variables';
 
+//---------------------------------------------------------------------
+// Keyframes
+//---------------------------------------------------------------------
+
 @-webkit-keyframes move {
   0% {
     background-position: 0 0;
@@ -16,15 +20,21 @@
   }
 }
 
+body /deep/ {
+
+//---------------------------------------------------------------------
+// px-progress-bar
+//---------------------------------------------------------------------
+
 px-progress-bar {
-  /shadow/ {
+  &::shadow {
     .fill {
       background-color: $color-success;
     }
   }
 
   &.info {
-    /shadow/ {
+    &::shadow {
       .fill {
         background-color: $color-info;
       }
@@ -32,7 +42,7 @@ px-progress-bar {
   }
 
   &.warning {
-    /shadow/ {
+    &::shadow {
       .fill {
         background-color: $color-warning;
       }
@@ -40,7 +50,7 @@ px-progress-bar {
   }
 
   &.danger {
-    /shadow/ {
+    &::shadow {
       .fill {
         background-color: $color-danger;
       }
@@ -48,7 +58,7 @@ px-progress-bar {
   }
 
   &.striped {
-    /shadow/ {
+    &::shadow {
       .fill {
         &:after {
           content: "";
@@ -62,7 +72,7 @@ px-progress-bar {
   }
 
   &.animated {
-    /shadow/ {
+    &::shadow {
       .fill {
         &:after {
           -webkit-animation: move 2s linear infinite;
@@ -71,3 +81,5 @@ px-progress-bar {
     }
   }
 }
+
+} // end body /deep/

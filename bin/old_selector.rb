@@ -7,8 +7,8 @@ filename = ARGV[0]
 lines = IO.readlines(filename)
 result = ""
 lines.each do |line|
-	line = line.sub('/shadow/', '^')
-	line = line.sub('/shadow-deep/', '^^')
+	line = line.sub('::shadow', ' ^')
+	line = line.sub('/deep/', '^^')
 	result = "#{result}#{line}"
 end
 

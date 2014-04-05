@@ -10,8 +10,14 @@
 @import 'partials/icons';
 @import 'partials/variables';
 
+body /deep/ {
+
+//---------------------------------------------------------------------
+// px-expander
+//---------------------------------------------------------------------
+
 px-expander {
-  /shadow/ {
+  &::shadow {
     .header {
       cursor: $cursor-click;
       transition: $background-color-transition;
@@ -38,3 +44,5 @@ px-expander {
     }
   }
 }
+
+} // end body /deep/

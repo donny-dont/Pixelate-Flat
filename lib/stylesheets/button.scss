@@ -7,6 +7,12 @@
 @import 'partials/fonts';
 @import 'partials/variables';
 
+body /deep/ {
+
+//---------------------------------------------------------------------
+// px-button
+//---------------------------------------------------------------------
+
 px-button {
   cursor: $cursor-click;
   transition: $background-color-transition;
@@ -27,3 +33,5 @@ px-button {
     @include color-change($color-danger);
   }
 }
+
+} // end body /deep/

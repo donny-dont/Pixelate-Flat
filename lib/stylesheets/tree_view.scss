@@ -10,8 +10,14 @@
 @import 'partials/icons';
 @import 'partials/variables';
 
+body /deep/ {
+
+//---------------------------------------------------------------------
+// px-tree-view-node
+//---------------------------------------------------------------------
+
 px-tree-view-node {
-  /shadow/ {
+  &::shadow {
     .header {
       cursor: $cursor-click;
       transition: $background-color-transition;
@@ -44,3 +50,5 @@ px-tree-view-node {
     }
   }
 }
+
+} // end body /deep/

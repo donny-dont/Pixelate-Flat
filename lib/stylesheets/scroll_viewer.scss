@@ -5,6 +5,14 @@
 
 @import 'partials/scrollable';
 
+body /deep/ {
+
+//---------------------------------------------------------------------
+// px-scroll-viewer
+//---------------------------------------------------------------------
+
 px-scroll-viewer {
   @include scrollable;
 }
+
+} // end body /deep/

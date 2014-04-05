@@ -7,7 +7,7 @@
 @import 'partials/colors';
 @import 'partials/variables';
 
-body /shadow-deep/ {
+body /deep/ {
 
 //---------------------------------------------------------------------
 // px-graph-canvas
@@ -16,7 +16,7 @@ body /shadow-deep/ {
 px-graph-canvas {
   @include background-grid(transparent, rgba($color-square-ui-white, 0.2));
 
-  /shadow/ {
+  &::shadow {
     path {
       stroke: $color-square-ui-white;
       stroke-width: 1px;
@@ -35,7 +35,7 @@ px-graph-canvas {
 $default-socket-size: 32px;
 
 px-graph-socket {
-  /shadow/ {
+  &::shadow {
     .socket {
       background-color: $color-square-ui-black;
 
@@ -48,4 +48,4 @@ px-graph-socket {
   }
 }
 
-} // end body /shadow-deep/
+} // end body /deep/

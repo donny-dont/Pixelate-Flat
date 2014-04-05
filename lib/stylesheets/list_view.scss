@@ -9,6 +9,13 @@
 @import 'partials/fonts';
 @import 'partials/variables';
 
+body /deep/
+{
+
+//---------------------------------------------------------------------
+// px-list-view-item
+//---------------------------------------------------------------------
+
 px-list-view-item {
   cursor: $cursor-click;
   transition: $background-color-transition;
@@ -21,3 +28,5 @@ px-list-view-item {
     background-color: $color-square-ui-purple;
   }
 }
+
+} // end body /deep
